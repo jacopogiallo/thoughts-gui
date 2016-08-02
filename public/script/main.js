@@ -2,7 +2,7 @@ var toggle = true;
 	
 // This function generates the remote api URL
 function getAPI() {
-	return apiUrl + ":" + apiPort + apiResource;
+	return apiUrl + ":" + apiPort + "/" + apiResource;
 }
 
 // This function append a thought-quote at the end of the page
