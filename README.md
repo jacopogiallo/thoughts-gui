@@ -20,7 +20,7 @@ The web-based GUI is thought to be offered through a [node](https://hub.docker.c
 
 (b) Run a node container (in interactive mode, by also indicating the host's port where to map the container's port 3000)
 ```
-docker run -it -v "$PWD/thoughts-gui":/thoughts-gui -p 3000:3000 node /bin/bash
+docker run -it -v "$PWD/thoughts-gui":/thoughts-gui -p 3000:3000 --name thoughtsnode node /bin/bash
 ```
 
 (c) Install the web-based GUI in the container.
